@@ -1,5 +1,5 @@
-# SGreen Online: first application
+# SGreen Online
 
-This is the website for R&B entertainer 
+This is the R&B entertainer's website
 [*SGreen Online*](http://sgreenonline.com/) 
-by [Eddie Martin].
+created by [Eddie Martin].
