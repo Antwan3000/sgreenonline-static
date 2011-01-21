@@ -1,0 +1,40 @@
+# Hostmonster.com
+# .htaccess main domain to subfolder redirect
+# Copy and paste the following code into the .htaccess file
+# in the public_html folder of your hosting account
+# make the changes to the file according to the instructions.
+
+
+# Do not change this line.
+
+RewriteEngine on
+
+#RewriteCond %{REQUEST_URI} !\.(css|jpg|png)$
+#RewriteCond /home/antwanfo/public_html/sgreenonline/public/system/maintenance.html -f
+#RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+#RewriteRule ^.*$ /home/antwanfo/public_html/sgreenonline/public/system/maintenance.html [L]
+# Change yourdomain.com to be your main domain.
+
+RewriteCond %{HTTP_HOST} ^(www.)?sgreenonline.com$
+
+
+# Change 'subfolder' to be the folder you will use for your main domain.
+
+RewriteCond %{REQUEST_URI} !^/public/
+
+# Don't change this line.
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Change 'subfolder' to be the folder you will use for your main domain.
+
+RewriteRule ^(.*)$ /public/$1
+
+# Change yourdomain.com to be your main domain again.
+# Change 'subfolder' to be the folder you will use for your main domain
+# followed by / then the main file for your site, index.php, index.html, etc.
+
+RewriteCond %{HTTP_HOST} ^(www.)?sgreenonline.com$
+RewriteRule ^(/)?$ public/index.html [L]
+
