@@ -1,5 +1,5 @@
 # SGreen Online: first application
 
-This is the first application for
+This is the website for R&B entertainer 
 [*SGreen Online*](http://sgreenonline.com/) 
-by [Antwan Foster].
+by [Eddie Martin].
