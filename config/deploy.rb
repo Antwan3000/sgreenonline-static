@@ -6,7 +6,7 @@ set :rake, "/usr/local/rvm/gems/ruby-1.9.2-p0@rails3/bin/rake"
 
 set :application, "sgreenonline.com"
 set :repository,  "git@github.com:Antwan3000/sgreenonline-static.git"
-set :deploy_to, "/home/puma/projects/#{application}"
+set :deploy_to, "/var/www/projects/#{application}"
 
 ## SCM Setup
 set :scm, :git  # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
