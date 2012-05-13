@@ -5,7 +5,7 @@ set :application, "sgreenonline.com"
 set :deploy_to, "/var/www/projects/#{application}"
 set :keep_releases, 3  ## Limited number of releases stored
 set :use_sudo, false
-set :rake, "/usr/local/rvm/gems/ruby-1.9.2-p0@rails3/bin/rake"
+set :rake, "/usr/local/rvm/gems/ruby-1.9.2-p290@rails31/bin/rake"
 default_run_options[:pty] = true
 
 #############################################################
@@ -15,7 +15,6 @@ set :scm, :git
 set :repository,  "git@github.com:Antwan3000/sgreenonline-static.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
-set :scm_command, "/opt/local/bin/git"
 set :scm_command, "/usr/bin/git"
 set :scm_verbose, true
 set :local_scm_command, :default
