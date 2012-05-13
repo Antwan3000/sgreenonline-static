@@ -16,6 +16,7 @@ set :repository,  "git@github.com:Antwan3000/sgreenonline-static.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
 set :scm_command, "/opt/local/bin/git"
+set :scm_command, "/usr/bin/git"
 set :scm_verbose, true
 set :local_scm_command, :default
 
